@@ -32,7 +32,7 @@ async function loginauth(providername){
         usuario.value=result.user;
         localStorage.setItem('usuario', usuario.value.uid);
         localStorage.setItem('autenticado', 'true');
-        localStorage.setItem('nombre', usuario.value.displayName);
+        sendEmailVerification(usuario.value);
         router.push('/recordatorios');
     })
     .catch((error) => {
