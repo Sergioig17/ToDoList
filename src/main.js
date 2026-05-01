@@ -8,7 +8,7 @@ import { initializeApp } from "firebase/app";
 import { VueFire } from "vuefire";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyDD2DYfP-9lrAY5HYiwry-0D9LPqcoRPrI",
+  apiKey: $_ENV["VUE_APP_FIREBASE_API_KEY"],
 
   authDomain: "todolistvue-c7d48.firebaseapp.com",
 
