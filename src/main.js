@@ -3,7 +3,6 @@ import "./Style.css";
 import { createRouter, createWebHistory } from "vue-router";
 import LandingPage from "./components/LandingPage.vue";
 import Recordatorios from "./components/Recordatorio.vue";
-import Usuario from "./components/Usuario.vue";
 import { initializeApp } from "firebase/app";
 import { VueFire } from "vuefire";
 import { getAuth } from "firebase/auth";
@@ -30,11 +29,6 @@ const routes = [
   {
     path: "/recordatorios",
     component: Recordatorios,
-    meta: { requiresAuth: true },
-  },
-  {
-    path: "/usuario",
-    component: Usuario,
     meta: { requiresAuth: true },
   },
 ];

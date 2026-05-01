@@ -81,7 +81,7 @@ a.router-link-active {
 header {
   background-color: color-mix(in srgb, var(--color-surface) 85%, #ffffff);
   padding: 18px 28px;
-  border-bottom: 3px solid var(--color-accent-strong);
+  border-bottom: 3px solid var(--color-text-title);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -167,13 +167,16 @@ async function confirmEdit(editarea,tareaedit){
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
+    width: min(100%, 960px);
+    margin: 0 auto;
+    box-sizing: border-box;
     background-color: var(--color-surface);
     flex: 1;
-    padding: 1rem;
+    padding: 1rem 1.25rem 1.5rem;
     position: relative;
+    border: 3px solid var(--color-surface-border);
+    border-top: 0px;
+    border-radius: 0 0 10px 10px;
 }
 
 .usuario-section {
@@ -234,6 +237,7 @@ async function confirmEdit(editarea,tareaedit){
     align-items: center;
     justify-content: flex-start;
     padding-top: 28px;
+    width: 100%;
 }
 
 .recordatorio-main h1 {

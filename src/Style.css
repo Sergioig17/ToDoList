@@ -11,7 +11,7 @@
   --color-bg-mid: #a8b9cf;
   --color-bg-end: #6d86a7;
   --color-surface: rgba(247, 250, 255, 0.95);
-  --color-surface-border: #b9c8d9;
+  --color-surface-border: #2b008f;
 
   --color-text-title: #1d3856;
   --color-text-primary: #1f4269;
@@ -19,6 +19,7 @@
   --color-text-muted: #2a4561;
   --color-on-primary: #ffffff;
 
+  --shadow-view: 0 10px 20px rgb(0, 81, 255);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
   --shadow-card: 0 10px 24px rgba(36, 54, 76, 0.16);
