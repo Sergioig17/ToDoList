@@ -25,7 +25,7 @@ var editarea = ref({
             {{ tarea.nombre }}
         </div>
         <div v-if="admin">
-            {{ usuario }}
+            {{ tarea.nombreuser==usuario ? 'Tuya' : 'De ' + tarea.nombreuser }}
         </div>
         <div class="tarea-prioridad" :class="{
             'prioridad-alta': tarea.prioridad === '3',

@@ -94,7 +94,7 @@ async function loginem(datos){
       </h3>
       <input v-model="entrada.email" type="email" placeholder="Correo electrónico"/>
       <input v-model="entrada.password" type="password" placeholder="Contraseña"/>
-      <input v-model="entrada.confirmar" type="password" placeholder="Confirmar contraseña"/>
+      <input v-model="entrada.confirmar" type="password" placeholder="Confirmar contraseña"  v-on:keyup.enter="loginem(entrada)"/>
       <button @click="loginem(entrada)">Iniciar sesión</button>
       <button @click="loginauth('google')">Iniciar sesión con Google</button>
       <button @click="loginauth('github')">Iniciar sesión con GitHub</button>

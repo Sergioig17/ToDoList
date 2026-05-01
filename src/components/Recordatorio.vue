@@ -14,7 +14,7 @@ const router = useRouter();
 const db=getFirestore();
 var lista = [];
 var user=localStorage.getItem("usuario");
-var nombre=localStorage.getItem("nombre");
+var nombre;
 var admin=user=="XIa1E2k6N6OYvvJWY67OFlGRB5v1" ? true : false;
 const auth = getAuth();
 var verTodos=ref(false);
@@ -25,6 +25,11 @@ var archivo;
 
 
 //FUNCIONES
+//Comprobacion de loggeo
+if(!localStorage.getItem("autenticado") || localStorage.getItem("autenticado")=="false"){
+    router.push('/');
+}
+
 //Logeos
 function logOut(){
     signOut(auth).then(()=>{
@@ -37,7 +42,7 @@ function logOut(){
 }
 
 onAuthStateChanged(auth, (usuario) => {
-
+    nombre = usuario.displayName || usuario.email||"Usuario sin nombre";
     if(!admin){
         q.value = query(todasTareas, where("uid", "==", user),orderBy("prioridad", "desc"));
     }else{
