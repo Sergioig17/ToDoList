@@ -38,7 +38,7 @@ import { ref } from 'vue';
 }
 
 h1 {
-  color: var(--color-accent-strong);
+  color: var(--color-text-title);
   font-size: 2.2rem;
   font-weight: 700;
   margin: 0;
